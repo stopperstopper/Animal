@@ -5,52 +5,52 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class Animal {
-    public static ArrayList<String> animals = new ArrayList<String>();
-    static String age;
-    static String name;
-    static String weight;
-    static String color;
+    private static ArrayList<String> animals = new ArrayList<String>();
+    private static String age;
+    private static String name;
+    private static String weight;
+    private static String color;
     static String say;
     static String fly;
     static String go;
     static String drink;
     static String eat;
-    static int deleteRow=0;
+    private static int deleteRow=0;
 
     // Методы GET/SET say, go, drink, eat
-    public static String getSay() {
+     static String getSay() {
         say = "Я говорю";
         return say;
     }
 
-    public void setSay(String newsay) {
+     void setSay(String newsay) {
         say = newsay;
     }
 
-    public String getGo() {
+    static String getGo() {
         go = "Я иду";
         return go;
     }
 
-    public void setGo(String newgo) {
+    static void setGo(String newgo) {
         go = newgo;
     }
 
-    public String getDrink() {
+    static String getDrink() {
         drink = "Я пью";
         return drink;
     }
 
-    public void setDrink(String newdrink) {
+    static void setDrink(String newdrink) {
         drink = newdrink;
     }
 
-    public String getEat() {
+    static String getEat() {
         eat = "Я ем";
         return eat;
     }
 
-    public void setEat(String neweat) {
+    static void setEat(String neweat) {
         eat = neweat;
     }
 // ----------------------------------------------------------------------//
@@ -137,6 +137,7 @@ public class Animal {
 
     //-----------------------------------------------------
 
+    @Override
     //Переопределение toString
     public String toString() {
         return "Привет! Меня зовут " + name + ", мне " + age + ", я вешу " + weight + " кг" + ", мой цвет - " + color;

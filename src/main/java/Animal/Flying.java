@@ -1,7 +1,7 @@
 package Animal;
 
 public  interface Flying {
-  public static void fly() {
+   static void fly() {
 
         System.out.println("Я лечу");
 

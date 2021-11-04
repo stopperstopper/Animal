@@ -1,7 +1,7 @@
 package Animal;
 
-public class Cat extends Animal{
-    public static String getSay() {
+class Cat extends Animal{
+     static String getSay() {
         say = "Мяу";
         return say;
     }

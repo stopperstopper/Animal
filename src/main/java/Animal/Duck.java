@@ -1,7 +1,7 @@
 package Animal;
 
 public class Duck extends Animal implements Flying{
-    public static String getSay() {
+     static String getSay() {
         say = "Кря";
         return say;
     }
