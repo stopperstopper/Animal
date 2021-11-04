@@ -212,8 +212,8 @@ public class Animal {
             System.out.println();
             menuPrint();
         }
-          //Duck duck =new Duck();
-        //System.out.println(duck.getfly());
 
+        //Duck duck =new Duck();
+        //System.out.println(duck.getfly());
     }
 }

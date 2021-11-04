@@ -5,7 +5,7 @@ public class Duck extends Animal implements Flying{
         say = "Кря";
         return say;
     }
-    public static String getfly() {
+    static String getfly() {
         fly = "Я лечу";
         return fly;
     }
