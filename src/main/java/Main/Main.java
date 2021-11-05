@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
 
-    static ArrayList<Animal> animal = new ArrayList();
+    static ArrayList<Animal> animalList = new ArrayList<>();
 
     enum menuEnum {
         add,
@@ -36,17 +36,13 @@ public class Main {
 
         Animal animal;
         switch (animalType) {
-            case "dog":
-                animal = new Dog();
-                break;
-            case "cat":
-                animal = new Cat();
-                break;
-            case "duck":
-                animal = new Duck();
-                break;
-            default:
-                animal = new Animal();
+            case "dog"-> animal = new Dog();
+               // break;
+            case "cat"-> animal = new Cat();
+                //break;
+            case "duck"-> animal = new Duck();
+                //break;
+            default ->   animal = new Animal();
 
         }
         nameAnimal(animal);
@@ -55,7 +51,7 @@ public class Main {
         colorAnimal(animal);
         animal.getSay();
         animal.getfly();
-        Main.animal.add(animal);
+        animalList.add(animal);
         menuChoice();
         //System.out.println(animals);
     }
@@ -124,10 +120,10 @@ public class Main {
 
     //Вывод списка на экран
     private static void printAll(ArrayList<Animal> list) {
-        if (animal.isEmpty())
+        if (animalList.isEmpty())
             System.out.println("В списке пусто");
 
-        for (int i = 0; i < animal.size(); i++) {
+        for (int i = 0; i < animalList.size(); i++) {
             System.out.println(list.get(i));
         }
     menuChoice();
@@ -140,21 +136,17 @@ public class Main {
         String menuChoice = scanner.nextLine().toLowerCase().trim();
 
         switch (menuChoice) {
-            case "add":
-                addAnimal();
-                break;
+            case "add"-> addAnimal();
+                //break;
 
-            case "list":
-                printAll(animal);
-                break;
+            case "list"-> printAll(animalList);
+                //break;
 
-            case "exit":
-                System.out.println("До свидания");
-                System.exit(1);
-                break;
-            default:
-                System.out.println("Нет такой команды");
-                break;
+            case "exit"-> { System.out.println("До свидания");
+            System.exit(1);}
+                //break;
+            default->   System.out.println("Нет такой команды");
+                //break;
         }
 menuChoice();
 
