@@ -37,11 +37,8 @@ public class Main {
         Animal animal;
         switch (animalType) {
             case "dog"-> animal = new Dog();
-               // break;
             case "cat"-> animal = new Cat();
-                //break;
             case "duck"-> animal = new Duck();
-                //break;
             default ->   animal = new Animal();
 
         }
@@ -137,16 +134,14 @@ public class Main {
 
         switch (menuChoice) {
             case "add"-> addAnimal();
-                //break;
 
             case "list"-> printAll(animalList);
-                //break;
 
             case "exit"-> { System.out.println("До свидания");
             System.exit(1);}
-                //break;
+
             default->   System.out.println("Нет такой команды");
-                //break;
+
         }
 menuChoice();
 
