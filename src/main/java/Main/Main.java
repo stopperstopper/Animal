@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
 
-    static ArrayList<Animal> animalsList = new ArrayList();
+    static ArrayList<Animal> animal = new ArrayList();
 
     enum menuEnum {
         add,
@@ -55,7 +55,7 @@ public class Main {
         colorAnimal(animal);
         animal.getSay();
         animal.getfly();
-        animalsList.add(animal);
+        Main.animal.add(animal);
         menuChoice();
         //System.out.println(animals);
     }
@@ -124,10 +124,10 @@ public class Main {
 
     //Вывод списка на экран
     private static void printAll(ArrayList<Animal> list) {
-        if (animalsList.isEmpty())
+        if (animal.isEmpty())
             System.out.println("В списке пусто");
 
-        for (int i = 0; i < animalsList.size(); i++) {
+        for (int i = 0; i < animal.size(); i++) {
             System.out.println(list.get(i));
         }
     menuChoice();
@@ -145,7 +145,7 @@ public class Main {
                 break;
 
             case "list":
-                printAll(animalsList);
+                printAll(animal);
                 break;
 
             case "exit":
@@ -161,12 +161,7 @@ menuChoice();
     }
 //-----------------------------------------------------------
 
-//утка летит
-//   private static void duckFly(){
-//    Duck duck =new Duck();
-//    duck.getfly();
-//}
-///--------------------------------------------
+
 
     // Main
 
