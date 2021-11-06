@@ -7,6 +7,5 @@ public class Duck extends Animal implements Flying{
     }
    void getfly() {
        Flying.fly();
-         //System.out.println("Я лечу");
-       }
+                }
 }

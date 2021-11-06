@@ -8,8 +8,9 @@ public class Animal {
     private  String nameAnimal;
     private  String weightAnimal;
     private  String colorAnimal;
-    private String say;
-    private String fly;
+    protected String say;
+    protected String fly;
+
     public void setAgeAnimal(String ageAnimal) {
         this.ageAnimal = ageAnimal;
     }
