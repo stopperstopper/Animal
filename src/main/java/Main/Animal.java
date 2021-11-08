@@ -27,8 +27,10 @@ public class Animal {
         this.colorAnimal = colorAnimal;
     }
 
-    void getSay() {this.say="Я говорю";}
-   void getfly() {this.fly=" ";}
+    void getSay() {this.say="Я говорю";
+    }
+    void getfly() {this.fly=" ";
+    }
 
     public String getAgeAnimal() {
         return ageAnimal;
