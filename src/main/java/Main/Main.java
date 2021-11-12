@@ -11,23 +11,20 @@ public class Main {
     static ArrayList<Animal> animalList = new ArrayList<>();
 
     enum menuEnum {
-        add,
-        list,
-        exit
+        ADD,
+        LIST,
+        EXIT
     }
 //Вывод меню на экран
     private static void menuPrint() {
         System.out.println("Введите пункт меню");
         menuEnum[] allmenuEnum = menuEnum.values();
         for (menuEnum comandMenu :allmenuEnum){
-
             System.out.println(comandMenu);
         }
-
     }
 
     //----------------------------------------------//
-
    //Добавить животное
     private static void addAnimal() {
         System.out.println("Введите животное Dog/Cat/Duck");
@@ -74,7 +71,7 @@ public class Main {
 
          if (ageAnimal.hasNextInt()) {
            yearsAll = ageAnimal.nextInt();
-
+//else{ throw new RuntimeException("asdasd");
         }
 
         if (yearsAll < 0)

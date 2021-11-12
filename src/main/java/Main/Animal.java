@@ -4,13 +4,14 @@ import java.lang.*;
 
 public class Animal {
 
-    private  String ageAnimal;
-    private  String nameAnimal;
-    private  String weightAnimal;
-    private  String colorAnimal;
+    protected   String ageAnimal;
+    protected   String nameAnimal;
+    protected   String weightAnimal;
+    protected   String colorAnimal;
     protected String say;
     protected String fly;
 
+    //@Override
     public void setAgeAnimal(String ageAnimal) {
         this.ageAnimal = ageAnimal;
     }
